@@ -1,8 +1,8 @@
 from datetime import datetime
-from services.email_service import enviar_email
-from services.reports_service import salvar_report
-from services.news_service import busca_financeiro
-from services.ia_service import gerar_resumo
+from src.services.email_service import enviar_email
+from src.services.reports_service import salvar_report
+from src.services.news_service import busca_financeiro
+from src.services.ia_service import gerar_resumo
 
 def main():
     try:
