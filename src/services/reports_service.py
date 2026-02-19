@@ -7,9 +7,7 @@ def salvar_report(conteudo):
     mes = agora.strftime("%m")
     data = agora.strftime("%Y-%m-%d")
 
-    repo_root = Path(__file__).parent.parent.parent
-    pasta = repo_root ("reports") / ano / mes
-    print(f"Criando pasta: {pasta}")
+    pasta = Path("reports") / ano / mes
     pasta.mkdir(parents=True, exist_ok=True)
 
     arquivo = pasta / f"{data}.md"
