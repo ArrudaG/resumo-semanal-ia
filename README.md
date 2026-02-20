@@ -1,6 +1,6 @@
 # 📊 Resumo de um Analista Financeiro IA  — AI News Intelligence System
 
-Aplicação em Python para coleta automatizada de notícias financeiras, geração de resumo inteligente utilizando IA e criação de relatório diário consolidado.
+Aplicação em Python para coleta automatizada de notícias financeiras, geração de resumo inteligente utilizando IA e criação de relatório semanal consolidado.
 
 O objetivo do projeto é demonstrar habilidades em integração com APIs externas, processamento de dados, automação de rotinas, organização de código e uso de modelos de IA generativa em aplicações reais.
 
@@ -12,7 +12,7 @@ O objetivo do projeto é demonstrar habilidades em integração com APIs externa
 - Filtragem de conteúdo relevante por palavra-chave  
 - Consolidação de múltiplas notícias em um único contexto  
 - Geração de resumo inteligente utilizando a API do Gemini  
-- Geração de relatório diário
+- Geração de relatório semanal
 - Tratamento de exceções para maior robustez  
 - Execução automatizada 1x ao dia  
 
@@ -53,7 +53,7 @@ Fluxo do sistema:
 3. Consolida títulos e descrições  
 4. Envia um único contexto para a IA  
 5. Gera um resumo estratégico consolidado  
-6. Salva relatório diário  
+6. Salva relatório semanal
 
 Essa abordagem reduz chamadas à API de IA, melhora performance e mantém o custo sob controle.
 
@@ -61,7 +61,7 @@ Essa abordagem reduz chamadas à API de IA, melhora performance e mantém o cust
 
 ## ☁️ Execução automatizada
 
-O sistema pode ser executado automaticamente via GitHub Actions com agendamento diário:
+O sistema pode ser executado automaticamente via GitHub Actions com agendamento semanal:
 
 ```yaml
 0 8 * * *
