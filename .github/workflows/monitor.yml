@@ -2,7 +2,7 @@ name: Resumo Diario Mercado Financeiro
 
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 10 * * mon"
   workflow_dispatch:
 
 permissions: write-all
@@ -31,6 +31,6 @@ jobs:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: python -m src.main
