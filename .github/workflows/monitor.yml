@@ -8,8 +8,9 @@ on:
 permissions: write-all
 
 jobs:
-  run-monitor:
+  send-report:
     runs-on: ubuntu-latest
+    environment: emails
 
     steps:
       - name: Checar repositório
@@ -32,5 +33,5 @@ jobs:
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          REPORT_EMAILS: ${{ secrets.REPORT_EMAILS }}
         run: python -m src.main
