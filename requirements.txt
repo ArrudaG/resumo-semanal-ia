@@ -1,4 +1,4 @@
-requests==2.31.0
+requests==2.32.3
 python-dotenv==1.0.1
 google-genai==1.63.0
 markdown==3.10.2

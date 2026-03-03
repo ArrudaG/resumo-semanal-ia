@@ -14,7 +14,7 @@ O objetivo do projeto é demonstrar habilidades em integração com APIs externa
 - Geração de resumo inteligente utilizando a API do Gemini  
 - Geração de relatório semanal
 - Tratamento de exceções para maior robustez  
-- Execução automatizada 1x ao dia  
+- Execução automatizada 1x na semana  
 
 ---
 
@@ -26,8 +26,8 @@ O objetivo do projeto é demonstrar habilidades em integração com APIs externa
 │ └── monitor.yml
 ├── src/
 │ ├── config/
-│ ├── services/
-│ └── main.py
+│ └── services/
+├── main.py
 ├── README.md
 └── requirements.txt
 ```
@@ -48,7 +48,7 @@ O objetivo do projeto é demonstrar habilidades em integração com APIs externa
 
 Fluxo do sistema:
 
-1. Busca notícias financeiras do dia  
+1. Busca as últimas notícias financeiras
 2. Limita quantidade para controle de custo e performance  
 3. Consolida títulos e descrições  
 4. Envia um único contexto para a IA  
@@ -64,7 +64,7 @@ Essa abordagem reduz chamadas à API de IA, melhora performance e mantém o cust
 O sistema pode ser executado automaticamente via GitHub Actions com agendamento semanal:
 
 ```yaml
-0 8 * * *
+0 10 * * mon
 ```
 
 Isso permite a execução do sistema na nuvem sem necessidade de servidor dedicado.
