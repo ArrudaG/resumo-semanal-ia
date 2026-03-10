@@ -34,4 +34,4 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           REPORT_EMAILS: ${{ secrets.REPORT_EMAILS }}
-        run: python -m src.main
+        run: python -m main
